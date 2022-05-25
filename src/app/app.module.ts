@@ -14,6 +14,13 @@ import { CompraComponent } from './paginas/compra/compra.component';
 import { VentaComponent } from './paginas/venta/venta.component';
 import { PrincipalComponent } from './paginas/principal/principal.component';
 import { RegistrateComponent } from './paginas/registrate/registrate.component';
+import { LoginComponent } from './paginas/login/login.component';
+import { Seccion3Component } from './componentes/seccion3/seccion3.component';
+import { SeccionfondoComponent } from './componentes/seccionfondo/seccionfondo.component';
+import { SeccionregistroComponent } from './componentes/seccionregistro/seccionregistro.component';
+import {HttpClientModule} from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
+import { ContactanosComponent } from './paginas/contactanos/contactanos.component';
 
 
 @NgModule({
@@ -30,11 +37,18 @@ import { RegistrateComponent } from './paginas/registrate/registrate.component';
     VentaComponent,
     PrincipalComponent,
     RegistrateComponent,
+    LoginComponent,
+    Seccion3Component,
+    SeccionfondoComponent,
+    SeccionregistroComponent,
+    ContactanosComponent,
    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    ReactiveFormsModule  
   ],
   providers: [],
   bootstrap: [AppComponent]

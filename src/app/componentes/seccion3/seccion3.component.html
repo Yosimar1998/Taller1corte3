@@ -1,0 +1,38 @@
+<div class=" container mt-4">
+
+    <div class="row">
+
+        <div class="col-lg-3 col-sm-3 col-md-3 col-xs-3">
+                       
+        </div>
+
+        <div class="col-lg-6 col-sm-6 col-md-6 col-xs-6">
+            <h1></h1><br>
+            <div class="border bg-white rounded">
+
+                <div class="text-center"> <br> <br> <br>
+
+                    <img src="./assets/sesion.png" alt="" width="200px" height="200px"><br> <br>
+                    <h2 class="text-center">Acceder a la Plataforma</h2><br>
+                                   
+                    <form class="form-group" [formGroup]="myformlogin">
+                        <label for="user"><b>Nombre de usuario:</b></label> <br>
+                        <input  type="text"  class="form-text" formControlName="user"> <br> <br>
+
+                        <label for=""><b>Contraseña:</b></label> <br>
+                        <input  type="password"  class="form-text "  formControlName="password"><br> <br>
+                    
+                        <button type="button" class="btn btn-outline-primary" (click)="iniciar(myformlogin.value)" >Login</button> <br> <br>
+                        <label>¿No estas registrado?> <a href="/registro"> <b>Haz clic aqui!</b></a></label>    
+                    </form>
+	
+                        
+                    </div><br> 
+                </div><br><br>
+            </div>
+        </div>
+    </div>
+
+
+
+

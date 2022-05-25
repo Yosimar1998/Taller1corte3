@@ -1,0 +1,53 @@
+
+    
+    <div class="container">
+<div class="row">
+    <div class="col-lg-4 col-md-3 col-sd-3 col-xl-3">
+        
+    </div>
+
+    <div class="col-lg-4 col-md-6 col-sd-6 col-xl-6"> <br>
+       
+    <div class="border bg-white rounded text-center "> <br>
+        <div >
+            <h2>Registro</h2>
+        </div> <hr>
+        <form class="form-group" [formGroup]="myform" >
+         
+            <label for="user"><b>Nombre:</b></label> <br>
+            <input type="text" class="form-text" formControlName="nombre"> <br>   
+
+            <label for="user"><b>Apellido:</b></label> <br>
+            <input type="text" class="form-text" formControlName="apellido"> <br>
+    
+            <label for="user"><b>Numero de Cel:</b></label> <br>
+            <input type="tel" class="form-text" formControlName="celular"> <br>
+    
+            <label for="user"><b>Email:</b></label> <br>
+            <input type="email" class="form-text" formControlName="email"> <br>
+
+            <label for="user"><b>Usuario:</b></label> <br>
+            <input type="text" class="form-text" formControlName="usuario"> <br>
+    
+            <label for="user"><b>Contraseña:</b></label> <br>
+            <input type="password" class="form-text" formControlName="pass"> <br> <br>
+    
+            <input type="button"  class="btn" (click)="Guardar(myform.value)" routerLink="/log" value="Resgistrar">
+            <a  href="../"><input type="button" class="btn btn-outline-primary"  value="Cancelar" > </a>
+            
+            
+    
+            
+    
+        </form> <p></p>
+    
+    </div>
+    </div>
+    <div class="col-lg-4 col-md-3 col-sd-3 col-xl-3"></div>
+
+</div>
+    </div>
+ 
+
+    
+<br>

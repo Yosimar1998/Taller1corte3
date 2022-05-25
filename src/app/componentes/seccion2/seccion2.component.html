@@ -1,1 +1,84 @@
-<p>seccion2 works!</p>
+
+<div class="container">              
+
+    <div class="row">
+
+        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 ">
+             
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">           
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                      <h4><strong>Atención telefónica</strong></h4>
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>Línea gratuita nacional: 01-8000-910122 - Línea Barranquilla +57 605 3078079  <br>        
+                           Lunes a viernes de 7:00 a.m. a 7:00 p.m. <br> <br>                             
+                            <b>PBX:</b> +576012222800: Lunes a jueves de 8:00 a.m. a 5:00 p.m.
+                         </p> 
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <h4><strong>Atención presencial</strong></h4>
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>A través del Grupo de Atención al usuario, se ofrece orientación e información de manera personalizada e inmediata y la gestión de los servicios de la plataforma compra y venta, en el horario de Lunes a viernes de 8:00 a.m. a 5:00 p.m. jornada continua en la Calle 58 # 55 - 24A, Barranquilla.
+                        </p>
+                    </div>
+                  </div>                     
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <h4><strong>Correo electrónico</strong></h4>
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">                        
+                        <p>asigna el correo electrónico <u>compra-venta@gmail.com</u> para tramites y gestión  de usuarios.</p>
+                    </div>
+                  </div>
+                </div>
+              </div><br>
+              <img class="border img-fluid" src="./assets/imagencontact.jpg">
+        
+
+        </div>          
+
+        <div class="border border-radio col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <form class="form-group" [formGroup]="myformcontacto"> <br>
+                <h2><strong>PQRSD</strong></h2>
+
+                <label for="user"><b>Nombre:</b></label> <br>
+                <input type="text" class="form-control"> <br>
+
+                <label for="user"><b>Apellido:</b></label> <br>
+                <input type="text" class="form-control"> <br>
+
+                <label for="user"><b>Numero de Cel:</b></label> <br>
+                <input type="tel" class="form-control"> <br>
+
+                <label for="user"><b>Fecha de solicitud:</b></label> <br>
+                <input type="date" class="form-control"> <br>
+
+                <label for="user"><b>Descripción:</b></label>
+
+                <textarea cols="53" rows="4" class="form-control"></textarea> <br>
+                <input type="button" class="btn btn-outline-primary" (click)="recargar(myformcontacto)" value="Enviar">
+                <input type="button" class="btn btn-outline-primary" (click)="recargar(myformcontacto)" value="Limpiar">
+            </form>
+        </div>
+    </div>
+    <!----------------------------------------------------------------------------------------------------------->
+    <!----------------------------------------------------------------------------------------------------------->
+                 
+</div>
